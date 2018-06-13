@@ -14,7 +14,7 @@
 		/**
 		* @var string Tag utilisé pour entourer les champs
 		*/
-		public $surround;
+		public $surround='p';
 
 		
 		/**
@@ -32,7 +32,7 @@
 		*/
 		public function surround($html)
 		{
-			return"<{$this->surround}> {html} </{$this->surround}>";
+			return"<{$this->surround}-> {html} </{$this->surround}>";
 		}		
 
 		
@@ -42,7 +42,7 @@
 		*/
 		public function getValue($index)
 		{
-			return isset($this->data[index])? $this->data[index] : NULL ;
+			return isset($this->data[$index])? $this->data[$index]: NULL;
 		}
 
 		/**
@@ -51,7 +51,8 @@
 		*/
 		public function input($name)
 		{
-			echo '<input type="text" name="'.$sname . '" value="'.$this-> getValue($name) . '">';
+			#echo '<input type="text" name="'.$name . '" value="'.$this-> getValue($name) . '">';
+			      '<input type="text" name="'.$name . '" value="'.$this-> getValue($name) . '">';
 		}
 		
 		/**
@@ -62,4 +63,7 @@
 		{
 			echo '<button type="submit"> Envoyer  <button/>';
 		}
+
+
 	}
+	?>

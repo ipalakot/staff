@@ -2,9 +2,9 @@
 	
 	class personnage {
 
-		public $vie = 80;
-		public $atk = 20;
-		public $nom;
+		protected $vie = 80;
+		protected $atk = 20;
+		protected $nom;
 
 		public function __contruct($nom){
 			$this->nom=$nom;
