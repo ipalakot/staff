@@ -4,7 +4,7 @@
 
 		public $vie = 80;
 		public $atk = 20;
-		private $nom;
+		public $nom;
 
 		public function __contruct($nom){
 			$this->nom=$nom;
