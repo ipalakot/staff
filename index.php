@@ -7,9 +7,7 @@
 </head>
 	<body>
 
-			<?php
-
-				
+			<?php				
 					require 'class/Autoloader.php';
 					Autoloader::register();
 
@@ -53,10 +51,7 @@
 	var_dump($harry);
 	echo "<br/>";
 	var_dump($Legolas);
-	echo "<br/>";
-
-
-
+	echo "<br/>";  
 
 
 // STATIC ET CONSTANTES
