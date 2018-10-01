@@ -2,7 +2,7 @@
 
 
 
-	<?php foreach ($db -> query('SELECT * FROM articles', 'App\Table\Article') as $post): ?>
+	<?php foreach ($db -> query('SELECT * FROM articles', 'App\Table\article') as $post): ?>
 	
 
 

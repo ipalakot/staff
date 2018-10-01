@@ -1,7 +1,38 @@
 
-/* Content
-
+/* 
 
 */
 
+
+<?php
+
+?>
+
+->
+
 <p>
+
+<?php
+
+
+/* 
+
+$db= new App\Database('staff_blog');
+$datas=$db->query('SELECT * FROM Articles');
+var_dump($datas[0]->titre);
+
+'App\Table\Article
+
+		<h5><a href="<?= $post->url ?>">  <?= $post->titre; ?></a></h5>
+					<?php var_dump($post); ?>
+		<p> <?= $post->extrait ?> </p>
+*/
+
+
+	<li>
+		<a href="index.php?p=post&id=<? = $post->id; ?>"> <?= $post->titre; ?> </a>;
+	
+	</li>
+
+	*/	
+	<?php endforeach; ?>
